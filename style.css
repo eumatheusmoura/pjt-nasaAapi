@@ -79,6 +79,8 @@ nav input:focus {
   margin-left: 50px;
   color: white;
   margin-top: 20px;
+  word-break: break-word;
+  width: 385px;
 }
 
 .colEsq h1::before {
@@ -89,7 +91,7 @@ nav input:focus {
   background-size: 30px 30px;
   width: 30px;
   height: 30px;
-  left: 15px;
+  left: 10px;
   position: absolute;
 }
 
@@ -105,6 +107,14 @@ nav input:focus {
 }
 
 img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+iframe {
+  width: 650px;
+  height: 400px;
   max-width: 100%;
   max-height: 100%;
   border-radius: 10px;
@@ -161,6 +171,10 @@ img {
   }
 
   .inputs2 {
+    display: none;
+  }
+
+  .esconder {
     display: none;
   }
 
@@ -316,6 +330,8 @@ img {
     color: white;
     margin-top: 20px;
     font-size: 1.3rem;
+    word-break: break-word;
+    width: 250px;
   }
 
   .colEsq h1::before {
@@ -327,7 +343,7 @@ img {
     width: 30px;
     height: 30px;
     top: 18px;
-    left: 15px;
+    left: 12px;
     position: absolute;
   }
 
@@ -348,6 +364,15 @@ img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 0px;
+  }
+
+  iframe {
+    width: 250;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    padding: 10px;
   }
 
   .btn {

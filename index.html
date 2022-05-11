@@ -12,26 +12,28 @@
 <body>
   <header>
     <nav>
-      <img src="./img/logo-nasaapi.png" class="logo" alt="Logo NasaAPI">
+      <a href="./index.html"><img src="./img/logo-nasaapi.png" class="logo" alt="Logo NasaAPI"></a>
       <div class="inputs">
         <input type="date" min="1995-05-16" id="data">
-        <button class="btn">Pesquisar</button>
+        <button class="btn" id="botao">Pesquisar</button>
       </div>
     </nav>
 
   </header>
   <div class="inputs2">
     <input type="date" min="1995-05-16" id="data">
-    <button class="btn">Pesquisar</button>
+    <button type="submit" class="btn" id="botao">Pesquisar</button>
+
   </div>
   <main class="container">
     <section class="colEsq">
-      <h1>Título da imagem ou vídeo</h1>
-      <p>On certain dates in February, an elusive firefall can be spotted at sunset in Yosemite National Park, when water flows, the weather cooperates and the direction to the setting Sun is just right. Often photographed from vantage points below, at the right moment the park's seasonal Horsetail Fall is isolated in the shadows of the steep walls of El Capitan. Then, still illuminated with rays of reddened sunlight the waterfall briefly takes on a dramatic, fiery appearance. But a Horsetail firefall can be photographed by moonlight too. Even more elusive by moonlight, the firefall effect can also be seen when a bright Moon sets at the right direction along the western horizon. And skies were clear enough for
+      <h1 id="titulo"></h1>
+      <p id="paragrafo">
       </p>
     </section>
     <section class="colDir">
-      <img src="./img/space-planet.jpg" alt="">
+      <img class="esconder" src="" alt="" id="img-nasa">
+      <iframe class="esconder" id="video-nasa" src=""></iframe>
     </section>
   </main>
 
