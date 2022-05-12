@@ -282,7 +282,7 @@ iframe {
   }
 
   .logo {
-    width: 80px;
+    width: 100px;
   }
 
   .inputs2 input {
@@ -363,7 +363,8 @@ iframe {
   img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 0px;
+    border-radius: 20px;
+    padding: 15px;
   }
 
   iframe {
@@ -373,6 +374,7 @@ iframe {
     max-height: 100%;
     border-radius: 20px;
     padding: 10px;
+    margin-top: 15px;
   }
 
   .btn {
