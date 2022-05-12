@@ -1,6 +1,6 @@
 window.onload = function () {
-  var today = new Date();
-  var date =
+  let today = new Date();
+  let date =
     today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
 
   $.ajax({
@@ -17,7 +17,7 @@ window.onload = function () {
 // Requisição da API
 
 function inicializadora() {
-  var data = $("#data").val();
+  let data = $("#data").val();
   $.ajax({
     url: `https://api.nasa.gov/planetary/apod?api_key=6vGjl5MQm0NPPhYc3pAxRIW6eCb2IlaGsf37XxIs&date=${data}`,
     success: function (response) {
@@ -30,23 +30,23 @@ function inicializadora() {
 }
 
 function insereDados(dado) {
-  var video = $("#video-nasa");
-  var imagem = $("#img-nasa");
-  var urlMidia = dado.url;
-  var tipoMedia = JSON.stringify(dado.media_type);
+  console.log(dado);
+  let video = $("#video-nasa");
+  let imagem = $("#img-nasa");
+  let urlMidia = dado.url;
+  let tipoMedia = JSON.stringify(dado.media_type);
   $("#titulo").text(dado.title);
   $("#paragrafo").text(dado.explanation);
 
   if (tipoMedia == '"image"') {
-    video.addClass("esconder");
+    $("#video-nasa").hide();
     imagem.attr("src", urlMidia);
-    imagem.removeClass("esconder");
+    $("#img-nasa").show();
   } else {
-    video.removeClass("esconder");
+    $("#video-nasa").show();
     video.attr("src", urlMidia);
-    imagem.addClass("esconder");
+    $("#img-nasa").hide();
   }
-  console.log("Teste");
 }
 
 const botao = document.querySelector("#botao");
